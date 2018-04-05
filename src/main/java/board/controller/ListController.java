@@ -11,11 +11,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class ListController {
     Logger log = Logger.getLogger(this.getClass());
     
-    @RequestMapping(value="/board/BoardList.do")
+    @RequestMapping(value="/board/boardList.do")
     public ModelAndView openSampleList(Map<String,Object> commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("");
-        log.info("인터셉터 테스트");
-         
+        ModelAndView mv = new ModelAndView("board/boardList");
+        
         return mv;
     }
 
